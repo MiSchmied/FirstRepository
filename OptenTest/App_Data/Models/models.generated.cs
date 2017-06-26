@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "dfdc3d262bbc788d")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9c3668428c751bca")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -130,12 +130,39 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Banner link
+		/// Banner Header_de
 		///</summary>
-		[ImplementPropertyType("bannerLink")]
-		public string BannerLink
+		[ImplementPropertyType("bannerHeader_de")]
+		public string BannerHeader_de
 		{
-			get { return this.GetPropertyValue<string>("bannerLink"); }
+			get { return this.GetPropertyValue<string>("bannerHeader_de"); }
+		}
+
+		///<summary>
+		/// Banner Header_de
+		///</summary>
+		[ImplementPropertyType("bannerHeader_en")]
+		public string BannerHeader_en
+		{
+			get { return this.GetPropertyValue<string>("bannerHeader_en"); }
+		}
+
+		///<summary>
+		/// Banner link_de
+		///</summary>
+		[ImplementPropertyType("bannerLink_de")]
+		public string BannerLink_de
+		{
+			get { return this.GetPropertyValue<string>("bannerLink_de"); }
+		}
+
+		///<summary>
+		/// Banner link_de
+		///</summary>
+		[ImplementPropertyType("bannerLink_en")]
+		public string BannerLink_en
+		{
+			get { return this.GetPropertyValue<string>("bannerLink_en"); }
 		}
 
 		///<summary>
@@ -157,6 +184,24 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Banner Subheader_de
+		///</summary>
+		[ImplementPropertyType("bannerSubheader_de")]
+		public string BannerSubheader_de
+		{
+			get { return this.GetPropertyValue<string>("bannerSubheader_de"); }
+		}
+
+		///<summary>
+		/// Banner Subheader_de
+		///</summary>
+		[ImplementPropertyType("bannerSubheader_en")]
+		public string BannerSubheader_en
+		{
+			get { return this.GetPropertyValue<string>("bannerSubheader_en"); }
+		}
+
+		///<summary>
 		/// Byline
 		///</summary>
 		[ImplementPropertyType("byline")]
@@ -166,12 +211,48 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Byline_de
+		///</summary>
+		[ImplementPropertyType("byline_de")]
+		public string Byline_de
+		{
+			get { return this.GetPropertyValue<string>("byline_de"); }
+		}
+
+		///<summary>
+		/// Byline_de
+		///</summary>
+		[ImplementPropertyType("byline_en")]
+		public string Byline_en
+		{
+			get { return this.GetPropertyValue<string>("byline_en"); }
+		}
+
+		///<summary>
 		/// Copyright
 		///</summary>
 		[ImplementPropertyType("copyright")]
 		public string Copyright
 		{
 			get { return this.GetPropertyValue<string>("copyright"); }
+		}
+
+		///<summary>
+		/// Copyright_de
+		///</summary>
+		[ImplementPropertyType("copyright_de")]
+		public string Copyright_de
+		{
+			get { return this.GetPropertyValue<string>("copyright_de"); }
+		}
+
+		///<summary>
+		/// Copyright_de
+		///</summary>
+		[ImplementPropertyType("copyright_en")]
+		public string Copyright_en
+		{
+			get { return this.GetPropertyValue<string>("copyright_en"); }
 		}
 
 		///<summary>
@@ -235,6 +316,24 @@ namespace Umbraco.Web.PublishedContentModels
 		public string SiteName
 		{
 			get { return this.GetPropertyValue<string>("siteName"); }
+		}
+
+		///<summary>
+		/// Site Name_de
+		///</summary>
+		[ImplementPropertyType("siteName_de")]
+		public string SiteName_de
+		{
+			get { return this.GetPropertyValue<string>("siteName_de"); }
+		}
+
+		///<summary>
+		/// Site Name_de
+		///</summary>
+		[ImplementPropertyType("siteName_en")]
+		public string SiteName_en
+		{
+			get { return this.GetPropertyValue<string>("siteName_en"); }
 		}
 
 		///<summary>
